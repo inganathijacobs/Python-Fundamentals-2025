@@ -97,3 +97,16 @@ print(i)
 - Built Git to maintain Linux as a side project
 - 2007
 - Git should work without internet so he can work while travelling
+
+# .ipynb
+
+- Interactive python notebook
+
+# venv
+
+- shield for bad updates
+
+## install
+
+- uv venv
+- bottom right tells you which version you're using
