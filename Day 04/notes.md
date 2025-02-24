@@ -66,6 +66,10 @@ print(i)
 
 ## GIT
 
+- Motivation:
+  - Git has version control
+  - It is a version control system for your project
+  - Enables you to be confident when you change
 - U stands for Untracked
 
 1. git init
@@ -75,4 +79,21 @@ print(i)
    1. Commit atleast 3 times in an hour
    2. Logical commit - Complete commit (no bugs)
    3. Small commit - Don't commit > 10 files
-5. Sync to github(online)
+5. Commit( Save point => creates a version)
+6. Sync to github(online)
+
+## Control Graph
+
+- Blue shows what you have locally
+- Blue and purple are the number of commits in total
+- To go back in time( Checkout)
+- To go back to normal version (Click master at the bottom and then master on the pop up)
+
+## Git vs github
+
+- Git- version control system(software)- Does not need Internet
+- GitHub- Google Drive(storing files)
+- Was created by Linux creator - Limus Torvalds
+- Built Git to maintain Linux as a side project
+- 2007
+- Git should work without internet so he can work while travelling
