@@ -67,7 +67,12 @@ print(i)
 ## GIT
 
 - U stands for Untracked
-  1. git init
-  2. Stage all
-  3. Provide message- Why?> What? (Explain why you did something)
-  4. Sync to github
+
+1. git init
+2. Stage all
+3. Provide message- Why?> What? (Explain why you did something)
+4. When to commit
+   1. Commit atleast 3 times in an hour
+   2. Logical commit - Complete commit (no bugs)
+   3. Small commit - Don't commit > 10 files
+5. Sync to github(online)
