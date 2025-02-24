@@ -88,3 +88,5 @@ rows = int(input("Please tell the no of rows: "))
 emoji1 = input("Please tell the emoji: ")
 for i in range(rows + 1):
     print(emoji1 * i)
+
+# This is a nice line added
