@@ -55,6 +55,7 @@ while i <= 3:
   ```
 - above will print (0,1,2)
 - `RANGE IS LIKE THE SLICE METHOD`
+- `range(start,end,step)`
 
 ```py
 for i in range(1,11)
@@ -66,3 +67,7 @@ print(i)
 ## GIT
 
 - U stands for Untracked
+  1. git init
+  2. Stage all
+  3. Provide message- Why?> What? (Explain why you did something)
+  4. Sync to github
