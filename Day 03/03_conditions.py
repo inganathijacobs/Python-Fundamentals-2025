@@ -26,19 +26,19 @@ else:
 # print whoever is taller
 # Luvuyo is taller than Luvuyo by 9cm
 
-# name1 = input("Please enter your name: ")
-# height1 = abs(float(input("Please enter your height: ")))
-# name2 = input("Please enter your name: ")
-# height2 = float(input("Please enter your height: "))
-# difference1 = height1 - height2
-# difference2 = height2 - height1
-# if height1 > height2:
-#     print(f"{name1} is taller than {name2} by {difference1}cm")
-# elif height1 == height2:
-#     print(f"{name1} and {name2} are of the same height")
+name1 = input("Please enter your name: ")
+height1 = abs(float(input("Please enter your height: ")))
+name2 = input("Please enter your name: ")
+height2 = float(input("Please enter your height: "))
+difference1 = height1 - height2
+difference2 = height2 - height1
+if height1 > height2:
+    print(f"{name1} is taller than {name2} by {difference1}cm")
+elif height1 == height2:
+    print(f"{name1} and {name2} are of the same height")
 
-# else:
-#     print(f"{name2} is taller than {name1} by {difference2}cm")
+else:
+    print(f"{name2} is taller than {name1} by {difference2}cm")
 
 
 # Task 1.2
