@@ -62,3 +62,7 @@ print(i)
 ```
 
 - above will start from 1 to 10
+
+## GIT
+
+- U stands for Untracked
