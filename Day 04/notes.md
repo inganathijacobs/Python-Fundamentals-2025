@@ -93,7 +93,7 @@ print(i)
 
 - Git- version control system(software)- Does not need Internet
 - GitHub- Google Drive(storing files)
-- Was created by Linux creator - Limus Torvalds
+- Was created by Linux creator - Linus Torvalds
 - Built Git to maintain Linux as a side project
 - 2007
 - Git should work without internet so he can work while travelling
@@ -110,3 +110,5 @@ print(i)
 
 - uv venv
 - bottom right tells you which version you're using
+
+## Enter VS Code in web
