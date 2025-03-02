@@ -12,6 +12,7 @@ print(fav_movie[-2])
 
 # Only Wick
 print(fav_movie[5] + fav_movie[6] + fav_movie[7] + fav_movie[8])
+print(fav_movie[-4:])
 
 # Slice operator (:)
 # fav_movie[start:end]- end index not included, step +1
