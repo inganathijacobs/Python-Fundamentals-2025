@@ -29,3 +29,8 @@ get_price()
 
 ##Closure
 # own scope + lexical scope
+
+# Assignment:
+# Write a comparison in terms of scope on keywords
+# global vs nonlocal
+# with examples
