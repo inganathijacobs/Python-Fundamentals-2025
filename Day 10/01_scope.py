@@ -30,6 +30,30 @@ get_price()
 ##Closure
 # own scope + lexical scope
 
+# Case 2:
+
+
+code_word = "Hulk"
+
+
+def space_ship():
+    question = "Please provide code word"
+
+    def code_word_check():
+        password = "Hulk"
+        print(question)
+
+        if password == code_word:
+            print(f"Welcome, {password} the strongest avenger 💪")
+        else:
+            print("❌ Access denied to 🚀")
+
+    code_word_check()
+
+
+space_ship()
+
+
 # Assignment:
 # Write a comparison in terms of scope on keywords
 # global vs nonlocal

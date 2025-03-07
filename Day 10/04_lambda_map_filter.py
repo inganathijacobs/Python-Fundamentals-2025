@@ -11,7 +11,8 @@
 
 # print(greet1("Jevan"))
 # print(greet("Jevan"))
-
+greet = lambda name: f"Hi {name}"
+print(greet("Inga"))
 
 # # Summary:
 # # 1. Anonymous -nameless function
@@ -51,10 +52,10 @@
 # # - choose lambda if it is one time use and because it is concise
 
 
-# result = filter(
-#     lambda x: x > 10, [10, 30, 60]
-# )  ## if result is true then it will be added to output
-# print(result, list(result))
+result = filter(
+    lambda x: x > 10, [10, 30, 60]
+)  ## if result is true then it will be added to output
+print(result, list(result))
 
 # gt1 = lambda x: x > 10  ## Returns true or false|| gt1 => predicate-> returns boolean
 # result = filter(gt1, [10, 30, 60])
@@ -83,8 +84,13 @@ avengers = [
 # Number letter in the name
 # [4, 8, 11, 15, 10, 4]
 
-letters = map(lambda x: len(x), avengers)
+
+letters = map(lambda name: len(name), avengers)
 print(list(letters))
+
+
+# letters = map(lambda x: len(x), avengers)
+# print(list(letters))
 
 
 # Task 1.2
@@ -133,9 +139,16 @@ scores = [
         "name": "Hatfield Hodge",
     },
 ]
-students = filter(lambda student: student["marks"] >= 40, scores)
-name = map(lambda student: student["name"], students)
-print(list(name))
+
+
+passed_students = filter(lambda student: student["marks"] >= 40, scores)
+names = map(lambda student: student["name"], passed_students)
+print(list(names))
+
+
+# students = filter(lambda student: student["marks"] >= 40, scores)
+# name = map(lambda student: student["name"], students)
+# print(list(name))
 
 
 # ## Task 1.4
@@ -146,6 +159,11 @@ print(list(name))
 
 # Output
 # Debra Beard
-sorted_students = sorted(scores, key=lambda student: student["marks"])
-topper = sorted_students[-1]
-print(topper["name"])
+
+studs = sorted(scores, key=lambda student: student["marks"])
+top = studs[-1]
+
+
+# sorted_students = sorted(scores, key=lambda student: student["marks"])
+# topper = sorted_students[-1]
+# print(topper["name"])
