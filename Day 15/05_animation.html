@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+        margin: 0px;
+      }
+
+      /*describes how it should look like initially*/
+      .box {
+        background: crimson;
+        height: 350px;
+        width: 400px;
+
+        /* animation won't work if this is not available*/
+        transition: 1s all;
+      }
+
+      /* describes how it should look after changes*/
+      .box:hover {
+        background: skyblue;
+        /*changes size to as many times as inside the ()*/
+        transform: scale(1.5) rotate(360deg);
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
+
+<!-- Pseudo class
+Fake class that CSS assigns when user interacts -->
+<!-- full spin - 360 deg
+    prefer fast -> make mili seconds and not seconds(0,2) -->

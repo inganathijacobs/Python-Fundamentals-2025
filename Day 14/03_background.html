@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        margin: 0px;
+      }
+      .banner {
+        /* if using gradient add ',' after the url else if it is a normal color add space*/
+        background: url("https://www.usnews.com/object/image/00000162-f3a3-d0d5-a57f-fbf38fc30000/15-li-river.jpg?update-time=1677094179665&size=responsive640")
+          rgb(24, 153, 160);
+        height: 600px;
+        /*ZOOM IN*/
+        background-size: cover;
+
+        /* REMOVES REPETITION OF BACKGROUND*/
+        background-repeat: no-repeat;
+
+        /*Focus on bottom*/
+        background-position: bottom;
+
+        /*Blend*/
+        background-blend-mode: luminosity;
+
+        display: grid;
+        place-content: center;
+      }
+      .banner-title {
+        margin: 0px;
+        font-size: 64px;
+        font-family: "Pacifico", cursive;
+        color: white;
+        background: rgba(106, 110, 111, 0.455);
+        padding: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <h1 class="banner-title">
+        Welcome to your dream land <i class="fa-solid fa-compass"></i>
+      </h1>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+      exercitationem cupiditate quasi doloribus, sequi corporis natus nisi,
+      quod, odio eius nulla necessitatibus! Libero officia voluptatem corrupti
+      molestiae numquam ipsum odio!
+    </p>
+  </body>
+</html>

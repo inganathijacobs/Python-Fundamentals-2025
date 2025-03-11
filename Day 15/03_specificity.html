@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* CLASSES HAVE HIGHER PRIORITY OVER ELEMENT SELECTOR*/
+      /* CLASS SELECTOR*/
+      /*#cool {
+        color: blue;
+      }
+      .fun {
+        color: pink;
+      }*/
+      /*ELEMENT SELECTOR*/
+      p {
+        color: crimson !important; /*preceeds everything else*/
+      }
+      /*lower one overwrites the above -Cascading*/
+      p {
+        color: orange;
+      }
+    </style>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <p class="fun three">This is super cool</p>
+  </body>
+</html>
+<!--
+class(father)> p(element)(YOU)
+id(mother)->higher priority
+ID IS ONLY USED ONCE (don't use)
+CLASS CAN BE USED MULTIPLE TIMES
+Inline(PRESIDENT)> ID (don't use)
+!important >Inline (don't use)
+WHY NOT:
+When wanting to reuse, it becomes problematic
+-->
+<!-- Diyali can create one more class or override the class -->

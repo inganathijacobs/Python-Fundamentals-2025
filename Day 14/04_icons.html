@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+        margin: 0px;
+        font-family: "Roboto", sans-serif;
+
+        /*CSS VARIABLES - declare it once, use it in multiple places*/
+        --light-red: #ff7477ff;
+        --caf-noir: #583e23ff;
+        --lavender-web: #e9e6ffff;
+        --viridian: #4e937aff;
+        --space-cadet: #1a1b41ff;
+        /* color:var(--light-red)*/
+      }
+      .hobby-container {
+        font-size: 32px;
+        margin-top: 0px;
+      }
+      .hobby-list {
+        list-style: none;
+        padding: 0px;
+        display: flex;
+        gap: 24px;
+      }
+      li {
+        outline: 8px solid skyblue;
+      }
+      .fa-music {
+        color: #ff7477ff;
+      }
+      .fa-unity {
+        color: #1a1b41ff;
+      }
+      .fa-futbol {
+        color: green;
+      }
+      .fa-chess {
+        color: #583e23ff;
+      }
+      .fa-masks-theater {
+        color: #4e937aff;
+      }
+      .fa-table-cells {
+        color: #e69597ff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hobby-container">
+      <h3 class="hobby-heading">Hobbies</h3>
+      <ul class="hobby-list">
+        <li>Music <i class="fa-solid fa-music"></i></li>
+        <li>3D Printing <i class="fa-brands fa-unity"></i></li>
+        <li>Soccer <i class="fa-solid fa-futbol"></i></li>
+        <li>Chess <i class="fa-solid fa-chess"></i></li>
+        <li>Sudoku <i class="fa-solid fa-table-cells"></i></li>
+        <li>Cosplaying <i class="fa-solid fa-masks-theater"></i></li>
+      </ul>
+    </div>
+  </body>
+</html>
