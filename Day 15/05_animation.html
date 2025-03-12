@@ -26,8 +26,12 @@
       .box:hover {
         background: skyblue;
         /*changes size to as many times as inside the ()*/
-        transform: scale(1.5) rotate(360deg);
-        border-radius: 50%;
+        transform: scale(1.1) translateY(-40px);
+        cursor: pointer;
+      }
+      .box:active {
+        background-color: purple;
+        transform: scale(0.9);
       }
     </style>
   </head>
@@ -40,3 +44,6 @@
 Fake class that CSS assigns when user interacts -->
 <!-- full spin - 360 deg
     prefer fast -> make mili seconds and not seconds(0,2) -->
+<!-- No more major animations, we have micro animations -->
+<!-- e.g: transform: scale(1.1) -->
+<!-- rotate(360deg) -rotate -->
