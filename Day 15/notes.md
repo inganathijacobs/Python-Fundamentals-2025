@@ -14,3 +14,8 @@
 - - if not enough spcae in one row, go to the next row
 
 - https://ragavkumarv.com/flex/
+
+## Flex gap
+
+- space-between- they manipulate and distribute the space for you
+- gap - you fix your own space
