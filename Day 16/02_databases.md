@@ -90,6 +90,7 @@
 - during this time you need more pcs
 - AWS provides the auto-scaling button , you just need to turn it on and everything will run smoothly
 - Auto- scaling - competition might know you are auto-scaling so they will increase traffic by putting lots of requests which will lead you to buying more servers -> they will just go to the home page to increase traffic
+- Auto-scaling works on demand-> if demand is high = scale up-> if demand is low you don't need to scale up
 - use Captcha to determine malicious traffic to legitimate traffic
 - use IP to capture people in other countries who are trying to cause traffic to a website that only is suitable for people in a certain country
 - REDIRECT THEM ELSEWHERE

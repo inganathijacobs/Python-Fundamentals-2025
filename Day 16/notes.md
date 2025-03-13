@@ -49,6 +49,9 @@
 - grid- column-gap/row-gap/ gap for both row and column gap
 - flex- gap direction depends on flex direction
 - with flex wrap- gap will be in both directions
+- FLEX :
+- row-> column gap
+- column-> row gap
 
 # Grid
 
