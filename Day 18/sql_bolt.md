@@ -172,3 +172,72 @@ SELECT sum(years_employed) as Engineers_Total_Years_Employed FROM employees wher
 ```
 
 ![alt text](image-5.png)
+
+# Exercise 12 — Tasks
+
+1. Find the number of movies each director has directed
+
+```sql
+SELECT director, count(title) as Number_of_Movies from movies group by director
+```
+
+2. Find the total domestic and international sales that can be attributed to each director
+
+```sql
+SELECT director, sum(domestic_sales)+ sum(international_sales) as Total_Sales
+from movies
+left join boxoffice on
+movies.id = boxoffice.Movie_id
+group by director
+```
+
+![alt text](image-6.png)
+
+## Exercise 13 — Tasks
+
+1. Add the studio's new production, Toy Story 4 to the list of movies (you can use any director)
+
+```sql
+insert into movies values(4, 'Toy Story 4', 'Inganathi Jacobs',2025,120)
+```
+
+2. Toy Story 4 has been released to critical acclaim! It had a rating of 8.7, and made 340 million domestically and 270 million internationally. Add the record to the BoxOffice table.
+
+```sql
+insert into boxoffice values (4, 8.7, 340000000,270000000);
+```
+
+![alt text](image-7.png)
+
+## Exercise 14 — Tasks
+
+1. The director for A Bug's Life is incorrect, it was actually directed by John Lasseter
+
+```sql
+Update movies
+set director="John Lasseter"
+where Id=2;
+
+```
+
+2. The year that Toy Story 2 was released is incorrect, it was actually released in 1999
+
+```sql
+select * from movies where title= "Toy Story 2";
+update movies
+set year='1999'
+where title= "Toy Story 2";
+```
+
+3. Both the title and director for Toy Story 8 is incorrect! The title should be "Toy Story 3" and it was directed by Lee Unkrich
+
+```sql
+select * from movies where title= "Toy Story 8";
+Update movies
+set title='Toy Story 3',
+director= "Lee Unkrich"
+where title= "Toy Story 8";
+
+```
+
+![alt text](image-8.png)
