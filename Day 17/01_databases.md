@@ -23,6 +23,19 @@
 6. Performance
    1. you can fine tune how you ask for something (query optimisation)
 
+# SQL VS NOSQL
+
+- sql- stores it in table
+- nosql->stores it as files/documents
+
+## RELATIONAL:
+
+-
+
+# NOSQL
+
+- radis captures things in RAM
+
 # SQL
 
 - is not case sensitive
@@ -53,6 +66,7 @@
 - data becomes more safer and safer ( Data safety increases)
 - if data is not safe then it is prone to anomalies
 - reducing anamolies
+- UPDATE anomalies
 
 ### First Order Normalisation
 
@@ -77,7 +91,7 @@
 
 ### Second Normal Form
 
-1.  Each non-key attribute must depend on the entire primary key
+1.  Each non-key attribute must depend on the `ENTIRE` primary key
 2.  Should satisfy both 1st normal form and second normal form
 
 ### Third Normal Form
