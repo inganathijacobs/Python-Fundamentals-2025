@@ -21,16 +21,13 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
       .body {
         max-width: 1440px;
         min-width: 320px;
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+        margin: 0px;
       }
       .header {
         display: flex;
@@ -41,7 +38,7 @@
         display: flex;
         justify-content: flex-end;
         gap: 20px;
-        font-family: "Inter";
+        font-family: "Inter", sans-serif;
         font-size: 15px;
       }
       .picture {
@@ -58,6 +55,40 @@
       .info {
         display: grid;
         row-gap: 20px;
+      }
+      .heading {
+        font-family: "Inter", sans-serif;
+        font-weight: 800;
+        font-size: 49px;
+        width: 250px;
+      }
+      .description {
+        font-family: "Inter", sans-serif;
+        color: hsl(236, 13%, 42%);
+        font-weight: 700;
+        font-size: 13px;
+        width: 400px;
+      }
+      .read-more {
+        background-color: hsl(5, 85%, 63%);
+        text-align: center;
+        padding: 10px;
+        padding-top: 20px;
+        width: 100px;
+        height: 30px;
+        font-family: "Inter", sans-serif;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 800;
+        letter-spacing: 1px;
+      }
+      .bottom-card {
+        display: flex;
+        gap: 20px;
+      }
+      .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
       }
     </style>
   </head>
@@ -82,15 +113,38 @@
           power of the platforms back into the hands of the people. But is it
           really fulfilling its promise?
         </div>
-        <div class="read_more">Read more</div>
+        <div class="read-more">Read more</div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="bottom-card">
+        <div class="bottom-img">
+          <img src="./assets/images/image-retro-pcs.jpg" />
+        </div>
+        <div class="bottom-info">
+          <p>01</p>
+          Reviving Retro PCs What happens when old PCs are given modern
+          upgrades?
+        </div>
+      </div>
+      <div class="bottom-card">
+        <div class="bottom-img">
+          <img src="./assets/images/image-top-laptops.jpg" />
+        </div>
+        <div class="bottom-info">
+          <p>02</p>
+          Top 10 Laptops of 2022 Our best picks for various needs and budgets.
+        </div>
+      </div>
+      <div class="bottom-card">
+        <div class="bottom-img">
+          <img src="./assets/images/image-gaming-growth.jpg" />
+        </div>
+        <div class="bottom-info">
+          <p>03</p>
+          The Growth of Gaming How the pandemic has sparked fresh opportunities.
+        </div>
       </div>
     </div>
   </body>
 </html>
-New Hydrogen VS Electric Cars Will hydrogen-fueled cars ever catch up to EVs?
-The Downsides of AI Artistry What are the possible adverse effects of on-demand
-AI image generation? Is VC Funding Drying Up? Private funding by VC firms is
-down 50% YOY. We take a look at what that means. 01 Reviving Retro PCs What
-happens when old PCs are given modern upgrades? 02 Top 10 Laptops of 2022 Our
-best picks for various needs and budgets. 03 The Growth of Gaming How the
-pandemic has sparked fresh opportunities.
