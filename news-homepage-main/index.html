@@ -3,54 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
+    <title>Test</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Frontend Mentor | News homepage</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-      .body {
+      body {
         max-width: 1440px;
-        min-width: 320px;
-        display: grid;
+        /* Centering */
+        display: flex;
+        flex-direction: column;
         place-content: center;
         min-height: 100vh;
         margin: 0px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 30px;
       }
       .header {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .logo {
+        justify-content: flex-start;
       }
 
       .tabs {
         display: flex;
         justify-content: flex-end;
-        gap: 20px;
+        gap: 35px;
         font-family: "Inter", sans-serif;
         font-size: 15px;
+        color: hsl(236, 13%, 42%);
       }
       .picture {
         width: 100%;
-        height: 400px;
-        width: auto;
+        background-image: url(./assets/images/image-web-3-desktop.jpg);
+        min-height: 200px;
+        /*ZOOM IN*/
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 40px;
       }
-      .picture_div {
-      }
+
       .info-card {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
       }
       .info {
         display: grid;
@@ -59,23 +62,23 @@
       .heading {
         font-family: "Inter", sans-serif;
         font-weight: 800;
-        font-size: 49px;
+        font-size: 40px;
         width: 250px;
       }
       .description {
         font-family: "Inter", sans-serif;
         color: hsl(236, 13%, 42%);
         font-weight: 700;
-        font-size: 13px;
-        width: 400px;
+        font-size: 15px;
+        width: 350px;
       }
       .read-more {
         background-color: hsl(5, 85%, 63%);
         text-align: center;
         padding: 10px;
-        padding-top: 20px;
-        width: 100px;
-        height: 30px;
+        padding-top: 10px;
+        width: 120px;
+        height: 20px;
         font-family: "Inter", sans-serif;
         text-transform: uppercase;
         font-size: 15px;
@@ -84,65 +87,103 @@
       }
       .bottom-card {
         display: flex;
-        gap: 20px;
+        gap: 12px;
+        width: 340px;
       }
       .footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+        display: flex;
+
+        width: 100%;
+
+        margin-top: 50px;
+      }
+      .bottom-info {
+        font-family: "Inter", sans-serif;
+        list-style-type: none;
+        font-family: "Inter", sans-serif;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .bottom-card-heading {
+        font-size: 20px;
+        font-family: "Inter", sans-serif;
+        color: hsl(240, 100%, 5%);
+        font-weight: 700;
+      }
+      .number {
+        font-size: 32px;
+        font-family: "Inter", sans-serif;
+        color: hsl(5, 85%, 63%);
+        font-weight: 700;
+        margin-top: 0px;
+      }
+      .bottom-card-info {
+        font-size: 15px;
+        font-family: "Inter", sans-serif;
+        color: hsl(236, 13%, 42%);
+      }
+      .bottom-img {
+        width: 100px;
+        height: 130px;
+        object-fit: cover;
       }
     </style>
   </head>
   <body>
     <header class="header">
-      <img src="./assets/images/logo.svg" />
+      <img src="./assets/images/logo.svg" class="logo" />
       <div class="tabs">
-        <div class="tab">Home</div>
-        <div class="tab">New Popular</div>
-        <div class="tab">Trending</div>
-        <div class="tab">Categories</div>
+        <div>Home</div>
+        <div>New</div>
+        <div>Popular</div>
+        <div>Trending</div>
+        <div>Categories</div>
       </div>
     </header>
-    <div class="picture_div">
-      <img src="assets/images/image-web-3-desktop.jpg" class="picture" />
-    </div>
+    <div class="picture"></div>
     <div class="info-card">
       <div class="heading">The Bright Future of Web 3.0?</div>
       <div class="info">
-        <div class="description">
+        <span class="description">
           We dive into the next evolution of the web that claims to put the
           power of the platforms back into the hands of the people. But is it
           really fulfilling its promise?
-        </div>
+        </span>
         <div class="read-more">Read more</div>
       </div>
     </div>
     <div class="footer">
       <div class="bottom-card">
-        <div class="bottom-img">
-          <img src="./assets/images/image-retro-pcs.jpg" />
-        </div>
+        <img class="bottom-img" src="./assets/images/image-retro-pcs.jpg" />
         <div class="bottom-info">
-          <p>01</p>
-          Reviving Retro PCs What happens when old PCs are given modern
-          upgrades?
+          <span class="number">01</span>
+          <span class="bottom-card-heading">Reviving Retro PCs</span>
+          <span class="bottom-card-info"
+            >What happens when old PCs are given modern upgrades?
+          </span>
         </div>
       </div>
       <div class="bottom-card">
-        <div class="bottom-img">
-          <img src="./assets/images/image-top-laptops.jpg" />
-        </div>
+        <img class="bottom-img" src="./assets/images/image-top-laptops.jpg" />
         <div class="bottom-info">
-          <p>02</p>
-          Top 10 Laptops of 2022 Our best picks for various needs and budgets.
+          <span class="number">02</span>
+          <span class="bottom-card-heading">Top 10 Laptops of 2022</span>
+          <span class="bottom-card-info"
+            >Our best picks for various needs and budgets.
+          </span>
         </div>
       </div>
       <div class="bottom-card">
-        <div class="bottom-img">
-          <img src="./assets/images/image-gaming-growth.jpg" />
-        </div>
+        <img class="bottom-img" src="./assets/images/image-gaming-growth.jpg" />
         <div class="bottom-info">
-          <p>03</p>
-          The Growth of Gaming How the pandemic has sparked fresh opportunities.
+          <span class="number">03</span>
+          <span class="bottom-card-heading">The Growth of Gaming</span>
+          <span class="bottom-card-info">
+            How the pandemic has sparked fresh opportunities.
+          </span>
         </div>
       </div>
     </div>
