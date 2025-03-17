@@ -29,7 +29,7 @@
 
 ### Insert
 
-- can mix match values but have to specify column names
+- can mix match values( insert values not in order) but have to specify column names
 - INSERT INTO Tablename(value1,valu2,valu3)
 
 ## UPDATE AND delete
@@ -37,3 +37,13 @@
 - write select statements for the rows that will be affected
 - then after change the select statement to UPDATE or DELETE
 - UPDATE -> FOR CORRECTION OF MISTAKE OR UPDATE LIKES OR RATING
+
+## Aggregation
+
+- is used to summarise data
+- each quarter - group by
+- group by gives you a more `drilled down` summary
+
+# Having
+
+- after you have used group by -> if you need to filter the grouped by data
