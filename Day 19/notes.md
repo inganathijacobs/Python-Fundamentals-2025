@@ -1,6 +1,7 @@
 ## DML
 
 - Data Manipulation Language
+- Delete and insert into columns
 
 ## DDL
 
@@ -29,7 +30,7 @@
    1. null is allowed
    2. can have mutiple uniques
 4. NOT NULL
-5. CHECK(EXPRESSION) -> Check is age>18 for driving test
+5. CHECK(EXPRESSION) -> Check is age>18 for driving test -> checks if value can go into column
 6. FOREIGN KEY
    ![alt text](image-3.png)
 
@@ -45,3 +46,13 @@
 
 - group by tsql -> choose Microsoft option (Learn Microsoft)
 - https://learn.microsoft.com/en-us/sql/t-sql/queries/select-group-by-transact-sql?view=sql-server-ver16
+
+# IF EXISTS
+
+- you want to release version 2
+- you delete all tables and recreate them since the data won't be the same as version 1
+- better to drop all tables and then do create and alter command for new version so that they don't face any problems
+- one table to another -> MIGRATION
+  ![alt text](image-7.png)
+  ![alt text](image-8.png)
+- migration file
