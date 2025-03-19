@@ -16,7 +16,7 @@ numpy ndarray-> ndimensional array
 
 - COMMA SEPARATED VALUES
 
-# Default value for
+# Default value for rows
 
 - is 5
 
@@ -33,3 +33,14 @@ numpy ndarray-> ndimensional array
 # `IMPORTANT`
 
 - ![alt text](image-2.png)
+
+tips_df.sort_values(by='tip-percent',ascending= False)
+
+tips_df['day'].value_counts() #Group by and Count, order by highest to lowest
+
+## Use boolean matrix to filter
+
+# Binary and or
+
+- &
+- |
